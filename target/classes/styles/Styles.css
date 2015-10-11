@@ -1,0 +1,283 @@
+
+.background {
+    -fx-background-color: #1d1d1d;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #373837;
+    -fx-control-inner-background: #1d1d1d;
+/*    -fx-background-color: #1d1d1d;*/
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 20%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#1d1d1d 0%, #606060 20%, #505250 51%, #2a2b2a 100%);
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 7;
+}
+
+.table-row-cell:filled:focused:selected {
+    
+    -fx-background-color:linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #1DB063 20%, #1DBE63 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #1DCA63 70%),
+        linear-gradient(#373837 0%, #1DB063 30%, #1DBE63 51%, #373837 100%);;
+    -fx-table-cell-border-color: transparent;
+    -fx-background-insets: 1, 9 9 9 9, 9 9 9 9, 9 9 9 9, 2 6 3 2;
+/*    -fx-background-color: #7f98e2;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+ */    
+}
+
+
+.table-view:row-selection .table-row-cell:filled:hover {
+    -fx-background-color:linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #349BFF 20%, #34A7FF 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #34AEFF 70%),
+        linear-gradient(#373837 0%, #349BFF 30%, #34A7FF 51%, #373837 100%);
+        
+    -fx-background-insets: 1, 9 9 9 9, 9 9 9 9, 9 9 9 9, 2 6 3 2;
+/*    -fx-background-color:cornflowerblue;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;*/
+}
+
+.table-view:row-selection .table-row-cell:filled:focused:hover {
+    
+/*    -fx-background-insets: 0, 0 0 1 0, 1 1 2 1, 2 2 3 2, 3 3 4 3;
+    -fx-text-fill: -fx-text-inner-color;*/
+}
+
+.text-field {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-background-color:#1d1d1d;
+    -fx-text-fill:white;
+    -fx-border:none;
+    -fx-border-radius: 10;
+}
+
+.button {
+/*    -fx-background-radius: 10;
+    -fx-border-color: #7f98e2;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-color: #5a4d4d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;*/
+-fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    -fx-background-insets: 0,1,4,5,6;
+    -fx-background-radius: 9,8,5,4,3;
+/*    -fx-padding: 15 30 15 30;*/
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 11pt;
+
+    -fx-text-fill: #d8d8d8;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) ,
+                1, 0.0 , 0 , 1);
+    
+    -fx-border-insets:0,1,4,5,6;
+    -fx-border-radius:9,8,5,4,3;
+    -fx-min-width: 64px; 
+    -fx-max-width: 64px; 
+    -fx-width: 64px; 
+}
+
+.button:hover {
+    -fx-text-fill:#34AEFF;
+/*    -fx-blend-mode:screen;*/
+    
+    -fx-background-color:
+        linear-gradient(#686868 0%, #34AEFF 50%, #373837 75%, #34AEFF 100%),
+        linear-gradient(#34AEFF, #3a3a3a),
+        linear-gradient(#34AEFF 0%, #6b6a6b 50%, #343534 80%, #242424 100%),
+        linear-gradient(#34AEFF 0%, #6b6a6b 50%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+}
+
+.button:pressed, .button:default:hover:pressed {
+/*    -fx-background-color: #7f98e2;*/
+    -fx-text-fill:#34CFFF;
+/*    -fx-blend-mode:screen;*/
+    
+}
+
+.button:pressed {
+/*    -fx-border-color:coral;*/
+    
+    -fx-background-color:
+        linear-gradient(#686868 0%, #1DB063 50%, #373837 75%, #1DB063 100%),
+        linear-gradient(#1DB063, #3a3a3a),
+        linear-gradient(#1DB063 0%, #6b6a6b 50%, #343534 80%, #242424 100%),
+        linear-gradient(#1DB063 0%, #6b6a6b 50%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.scroll-bar:horizontal {
+    -fx-border-color: #373837;
+    -fx-control-inner-background: #373837;
+    -fx-base: #373837;
+    -fx-scrollbar-corner-color:#373837;
+    
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #373837 50%, #373837 50%, #777777 100%);
+/*-fx-background-color:
+    #5a4d4d,
+    linear-gradient(to bottom, derive(#5a4d4d,30%) 5%, derive(#5a4d4d,-17%) 100%);
+-fx-background-insets: 0, 1;*/
+}
+.scroll-bar:horizontal:focused {
+        -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #606060 50%, #505250 51%, #2a2b2a 100%);
+    
+/*-fx-background-color:
+    -fx-focus-color,
+    -fx-box-border,
+    linear-gradient(to bottom, derive(#5a4d4d,30%) 5%, derive(#5a4d4d,-17%) 100%);
+-fx-background-insets: -1.4, 0, 1;*/
+}
+
+.scroll-bar:vertical {
+    
+    -fx-background-color:
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #262626 100%),
+        linear-gradient(#777777 0%, #373837 50%, #373837 50%, #777777 100%);
+    -fx-control-inner-background: #373837;    
+    -fx-base: #373837;
+    -fx-scrollbar-corner-color:#373837;
+/*-fx-background-color:
+    #5a4d4d,
+    linear-gradient(to top, derive(#5a4d4d,30%) 5%, derive(#5a4d4d,-17%) 100%);
+-fx-background-insets: 0, 1;*/
+}
+
+.scroll-bar:vertical:focused {
+-fx-background-color:
+    #5a4d4d,
+    #5a4d4d,
+    linear-gradient(to top, derive(#5a4d4d,30%) 5%, derive(#5a4d4d,-17%) 100%);
+-fx-background-insets: -1.4, 0, 1;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color:linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #349BFF 20%, #34A7FF 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #34AEFF 70%),
+        linear-gradient(#373837 0%, #349BFF 30%, #34A7FF 51%, #373837 100%);  
+    
+    
+/*-fx-background-color:
+    #5a4d4d,
+    linear-gradient(to bottom, derive(#7f98e2,95%), derive(#7f98e2,10%)),
+    linear-gradient(to bottom, derive(#7f98e2,38%), derive(#7f98e2,-16%));*/
+-fx-background-insets: 0,1,2;
+-fx-background-radius: 0.5em; 
+}
+
+.scroll-bar:vertical .thumb {
+  -fx-background-color:linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #349BFF 20%, #34A7FF 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #34AEFF 100%),
+        linear-gradient(#373837 0%, #349BFF 30%, #34A7FF 51%, #373837 100%);  
+    
+/*-fx-background-color:
+    #5a4d4d,
+    linear-gradient(to right, derive(#7f98e2,95%), derive(#7f98e2,10%)),
+    linear-gradient(to right, derive(#7f98e2,38%), derive(#7f98e2,-16%));
+*/
+  -fx-background-insets: 0,1,2;
+  -fx-background-radius: 0.5em; 
+}
+
+.scroll-bar:focused .thumb {
+-fx-color: linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#9d9e9d 0%, #349BFF 20%, #34A7FF 80%, #242424 100%),
+        linear-gradient(#8a8a8a 0%, #6b6a6b 20%, #343534 80%, #34AEFF 100%),
+        linear-gradient(#373837 0%, #349BFF 30%, #34A7FF 51%, #373837 100%);
+
+}
+
+.scroll-bar .thumb:hover {
+-fx-color: -fx-hover-base;
+-fx-base: #373837;
+}
+
+#saved {
+    
+    -fx-font-size: 14pt;
+    -fx-text-fill: #7f98e2;
+}
+
+#wrongInput {
+    -fx-font-size: 12pt;
+    -fx-text-fill: red;
+    
+}
+
+#person {
+    -fx-font-size: 14pt;
+}
+
+#pane {
+    
+    -fx-background-color: #373837;
+}
+
+
+
+    
+   
+    
+        
+
